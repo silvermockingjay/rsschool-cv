@@ -2,10 +2,160 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>CV</title>
+        <title>CV Anastasia Kudrevich</title>
     </head>
-    <body>
+    <body class="grid-container">
+        <header class="grid-item1">
+            <nav>
+                <ul class="nav">
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code">Code example</a></li>
+                    <li><a href="#xp">My experience</a></li>
+                    <li><a href="#edu">Education</a></li>
+                    <li><a href="#langs">Languages</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="grid-item2">
+            <div class="content1">
+                <figure>
+                    <img src="img.jpg" alt="Anastasia Kudrevich">
+                </figure>
+                <section id="contacts">
+                    <h2>Contacts</h2>
+                    <ul>
+                        <li>Tel: +381 61 6627916</li>
+                        <li>Telegram: <a href="https://t.me/ana_kdrch">t.me/ana-kdrch</a></li>
+                        <li>GitHub: <a href="https://github.com/silvermockingjay">github.com/silvermockingjay</a></li>
+                        <li>Discord: Anastasia (@silvermockingjay)</li>
+                        <li>Email: <a href="mailto:ana.kudrevich@gmail.com">ana.kudrevich@gmail.com</a></li>
+                        <li>Based in Belgrade, Serbia</li>
+                    </ul>
+                </section>
+                <section id="edu">
+                    <h2>Education</h2>
+                    <p>
+                        <b>HarvardX, an online learning initiative of Harvard University</b><br>
+                        CS50x: CS50’s Introduction to Computer Science<br>
+                        2024
+                    </p>
+                    <p>
+                        <b>Saint Petersburg State University of Economics</b><br>
+                        Bachelor degree in World economics<br>
+                        2012-2016
+                    </p>
+                </section>
+                <section id="langs">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>English - B2</li>
+                        <li>Russian - native</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="content2">
+                <section>
+                    <h1>Anastasia Kudrevich</h1>
+                    <h2>Front-End developer</h2>
+                </section>
+                <section id="about">
+                    <h2>About me</h2>
+                    <p>
+                        I have always been attracted by “creating” professions, such as teachers, doctors, engineers, because they profoundly change quality of life for a large amount of people.<br>
+                        I believe that helping others and contributing to society is a worthy pursuit. Besides, I have always enjoyed solving various problems and optimizing processes.<br>
+                        That’s why after six years in retail, I decided to realize this need and become a developer.
+                    </p>
+                    <p>
+                        Developed a web app to optimize dog walking for my neighbors, using computer science to enhance daily life and community efficiency.
+                    </p>
+                </section>
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>SQLite3</li>
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>Jinja2</li>
+                        <li>Algorithms and data structures</li>
+                        <li>GIT & GitHub</li>
+                    </ul>
+                </section>
+                <section id="code">
+                    <h2>Code example</h2>
+                    <pre>
+                        function getMaxSubSum(arr) {
+                            let maxSum = 0;
+                            let partialSum = 0;
+
+                            for (let item of arr) {
+                                partialSum += item;
+                                maxSum = Math.max(maxSum, partialSum);
+                                if (partialSum &lt; 0) partialSum = 0;
+                            }
+                            return maxSum;
+                        }
+                    </pre>
+                </section>
+                <section id="xp">
+                    <h2>Experience</h2>
+                    <p>
+                        <b>Zemun dog playground</b> – a web app designed for registration at the Zemun dog park and overview of current participants.<br>
+                        It provides information about dogs that are currently at the playground, helping users to assess the situation and choose optimal time for a walk.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Client-side:</strong> JavaScript, HTML, CSS, Bootstrap. Utilizes Fetch API for asynchronous requests and dynamic content updates
+                        </li>
+                        <li>
+                            <strong>Server-side:</strong> Flask. Handles requests and stores data using SQLite
+                        </li>
+                        <li>
+                            <strong>Features:</strong> user’s registration and authorization, data verification, password reset using security questions, detailed overview of currently checked in dogs, dog profile creation, edition and deletion, check in and check out, view of notifications and sending gifts
+                        </li>
+                        <li>
+                            <strong>Safety:</strong> session based user authorization, password hashing using Werkzeug library. Client-side (JavaScript, JavaScript Validation API) and server-side (Flask) form validation
+                        </li>
+                        <li>
+                            <strong>Design and UX:</strong> adaptive design, interactive elements
+                        </li>
+                    </ul>
+                    <p>
+                        Here is <a href="https://github.com/me50/silvermockingjay/tree/cs50/problems/2024/x/project">GitHub repository</a><br>
+                        Here is <a href="https://www.youtube.com/watch?v=wMdfZMkByws">YouTube demo</a>
+                    </p>
+                    <p>
+                        <b>Finnick the vizsla </b> – static website devoted to my dog Finnick.<br>
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Client-side:</strong> JavaScript, HTML, CSS, Bootstrap
+                        </li>
+                        <li>
+                            <strong>Features:</strong> interactive content about Finnick, photo gallery and information about Hungarian vizslas
+                        </li>
+                        <li>
+                            <strong>Design and UX:</strong> adaptive design, interactive elements
+                        </li>
+                    </ul>
+                    <p>
+                        Here is <a href="https://github.com/me50/silvermockingjay/tree/cs50/problems/2024/x/homepage">GitHub repository</a><br>
+                        Here is <a href="https://www.youtube.com/watch?v=xZ_50d0qXcA">YouTube demo</a>
+                    </p>
+                </section>
+            </div>
+        </main>
+        <footer class="grid-item3">
+            <a href="https://github.com/silvermockingjay">My GitHub</a>
+            <span>2024</span>
+            <a href="https://rs.school/courses/javascript">RS School JavaScript/Front-End course</a>
+            <img src="rs-school-logo.svg" alt="RS School logo" width="60" height="30">
+        </footer>
     </body>
 </html>

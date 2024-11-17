@@ -1,0 +1,82 @@
+body {
+    background-color: #ffffff;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+  
+.nav {
+    list-style-type: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr 0.5fr;
+    width: 80vw;
+    margin: 0 auto;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+.grid-item1{
+    grid-row: 1;
+    background-color: #ffbaba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5em;
+}
+
+.grid-item3{
+    grid-row: 3;
+    background-color: #ffbaba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1em;
+}
+
+.grid-item2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row: 2;
+    justify-content: space-around;
+    font-size: 1.2em;
+}
+
+.content1{
+    grid-column: 1;
+    background-color: #fff1e6;
+}
+
+.content2{
+    grid-column: 2;
+    background-color: #fdfbf9;
+}
+
+.content2 a {
+    color:darkred;
+}
+
+.content1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+section {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
