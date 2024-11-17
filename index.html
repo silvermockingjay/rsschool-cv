@@ -89,21 +89,19 @@
                 </section>
                 <section id="code">
                     <h2>Code example</h2>
-                    <code>
-                        <pre>
-                            function getMaxSubSum(arr) {
-                                let maxSum = 0;
-                                let partialSum = 0;
+                    <pre>
+                        function getMaxSubSum(arr) {
+                            let maxSum = 0;
+                            let partialSum = 0;
 
-                                for (let item of arr) {
-                                    partialSum += item;
-                                    maxSum = Math.max(maxSum, partialSum);
-                                    if (partialSum < 0) partialSum = 0;
-                                }
-                                return maxSum;
+                            for (let item of arr) {
+                                partialSum += item;
+                                maxSum = Math.max(maxSum, partialSum);
+                                if (partialSum &lt; 0) partialSum = 0;
                             }
-                        </pre>
-                    </code>
+                            return maxSum;
+                        }
+                    </pre>
                 </section>
                 <section id="xp">
                     <h2>Experience</h2>
